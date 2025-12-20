@@ -40,12 +40,10 @@ USER roboshop
 CMD ["uwsgi", "--ini", "payment.ini"]
 
 
-
-
 # FROM python:3.9
 # EXPOSE 8080
 # WORKDIR /opt/server
-# COPY payment.ini . 
+# COPY payment.ini .
 # COPY *.py .
 # COPY requirements.txt .
 # RUN pip3 install -r requirements.txt
@@ -56,4 +54,4 @@ CMD ["uwsgi", "--ini", "payment.ini"]
 #     AMQP_HOST="rabbitmq" \
 #     AMQP_USER="roboshop" \
 #     AMQP_PASS="roboshop123"
-# CMD ["uwsgi","--ini","payment.ini"]    
+# CMD ["uwsgi","--ini","payment.ini"]
